@@ -1,0 +1,816 @@
+/* スマホ用 */
+
+@media (max-width: 680px) {
+
+.pcdisp{
+    display: none;
+}
+
+.resdisp{
+    display: block;
+}
+
+h1,
+h2{
+    font-size: 100%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*トップページボタン*/
+#page_top{
+    right: 2%;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    padding-left:0;
+    padding-right: 0;
+    align-items: stretch;
+}
+
+.header-text{
+    position:absolute;
+
+}
+
+.header-text p{
+    margin-top: 10px;
+    margin-left: 10%;
+    font-size: 60%;
+    white-space:nowrap;
+}
+
+.header-logo{
+    width: 80%;
+}
+
+.header img{
+    margin-top: 1.5em;
+    margin-left: 5%;
+    width: 35%;
+    height: auto;
+    padding-bottom: 0;
+}
+
+.header-btn-img{
+    display: inline-block;
+    width: 20%;
+    background-color: rgb(218,107,100);
+    text-align: center;
+    position: relative;
+}
+
+.header-btn-img img{
+    margin: 0;
+    width: 25%;
+    height: auto;
+    position: absolute;
+    top: 40%;                    /* 親要素の半分下にずらす */
+    left: 50%;                   /* 親要素の右にずらす */
+    transform: translateY(-50%) translateX(-50%);/* 要素自体の半分、上と左にずらす */
+
+}
+
+.header-btn-img p{
+    width: 5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: clamp(75%,2vw,90%);
+    color: white;
+    position: absolute;
+    top: 75%;                    /* 親要素の半分下にずらす */
+    left: 50%;                   /* 親要素の右にずらす */
+    transform: translateY(-50%) translateX(-50%);/* 要素自体の半分、上と左にずらす */
+
+}
+
+.btn{
+    border-radius: 25px;
+    background-color: rgb(218,107,100);
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.home{
+    top: 60px;
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    background-image: url(./image/mainsp.jpg);
+    background-position: 0 -50px;
+}
+
+.join{
+    padding-top: 1px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.join-text-red{
+    width: 100%;
+    margin: 0 1%;
+    font-weight: normal;
+    font-size: 0.85em;
+    letter-spacing: clamp(0.08em,2vw,0.12em);
+}
+
+.join-text{
+    margin-bottom: 0em;
+}
+
+.big-btn{
+    display: inline-block;
+    border-radius: 60px;
+    font-size: 1.2em;
+}
+
+.join-season{
+    margin-top: 1em;
+}
+
+.join-season p{
+    font-size: 0.8em;
+}
+
+.intro{
+    height: 580px;
+}
+
+.intro p{
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+}
+
+.intro-bottom{
+    height: 50px;
+}
+
+.intro-caption h2{
+    font-size: clamp(1.05em,2vw,1.2em);
+    letter-spacing: clamp(0.05em,2vw,0.2em);
+    line-height: 2.5em;
+    padding: 20px 20px;
+    display: inline-block;
+    position:relative;
+}
+
+.caption h2::before, .caption h2::after{
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+
+.about-mark p{
+    font-size:13px;
+    border-radius: 50px;
+    /*Aboutを丸の中心に配置*/
+    height:60px;
+    width:60px;
+    line-height: 60px;
+    top: -10px; 
+}
+
+.about-caption h2{
+    font-size: 1.1em;
+    padding: 35px 50px;
+    display: inline-block;
+    position:relative;
+}
+
+.about-caption h3{
+    font-size: 1em;
+}
+
+.about-caption{
+    margin-bottom: 40px;
+}
+
+.about-menu{
+    margin: 10px 5%;
+    padding: 0px 0%;
+}
+
+.about-menu-five{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-menu-contents{
+    width: 35%;
+    padding: 10px 0;
+}
+
+.about-menu-contents p{
+    font-size: 0.5em;
+}
+
+.teach-policy1{
+    height: 680px;
+    background-image: url(./image/aboutsecondbgsp.jpg);
+    background-size: cover;
+}
+
+.teach-policy1 h2{
+    font-size: 1.2em;
+}
+.teach-policy1 h3,
+.teach-policy1 h4{
+    font-size: 0.8em;
+}
+
+.teach-policy2 h3{
+    font-size: 0.8em;
+}
+
+
+.teach-container{
+    flex-wrap: wrap;
+}
+
+.teach-contents{
+    width: 80%;
+    height: 0%;
+    margin:10px 10%;
+    padding: 0.5em 3em ;
+}
+.teach-contents-step{
+    margin: 1em 0;
+    font-size: 0.8em;
+}
+
+.teach-contents-index,
+.teach-contents-text{
+    margin: 0.5em 0;
+    font-size: 0.8em;
+}
+
+.teach-contents-step{
+    background-color: #ebb94d;
+    color: white;
+    border-radius: 5px;
+}
+
+.teach-policy2{
+    padding: 1em 0;
+    background-color: rgb(1,110,169);
+}
+
+.teach-policy2 h3{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+}
+
+.learn-container h2{
+    margin: 2em;
+    font-size: 1.2em;
+}
+
+.learn-container p{
+    margin-bottom: 1em;
+    font-size: 0.9em;
+    letter-spacing: 0.15em;
+}
+
+.learn-menu-contents{
+    width: 15%;
+    height: auto;
+    margin: 0 2%;
+}
+
+.learn-menu-contents img{
+    width: 100%;
+    height: auto;
+}
+
+.learn-container h3{
+    margin: 1em 0 2em 0;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+}
+
+.merit-caption h2{
+    font-size: 1.2em;
+    padding: 15px 35px;
+    display: inline-block;
+    position:relative;
+}
+
+.merit-menu{
+    flex-direction: column;
+    align-items: center;
+}
+
+.merit-menu-contents{
+    width: 90%;
+    margin: 0 2%;
+}
+
+.merit-menu-contents-image{
+    text-align: center;
+}
+.merit-menu-contents-image img{
+    width: 100%;
+    height: 8em;
+    object-fit:cover;
+}
+
+.merit-menu-contents-text1{
+    text-align: center;
+}
+
+.merit-menu-contents-text2{
+    margin-bottom: 2em;
+    padding: 0 1em;
+    font-size: 0.8em;
+
+}
+
+.support{
+    padding-top: 1em;
+}
+
+.support-container{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0 0;
+    background-color: white;
+    border: 2px solid #ebb94d;
+    border-radius: 5px;
+}
+
+.support-container h3{
+    font-size: 1em;
+}
+
+.support-container p{
+    margin: 0;
+    padding: 0 1em 2em 1em;
+    font-size: 0.6em;
+}
+
+.support-bottom{
+    padding: 1em;
+    font-size: 0.7em;
+}
+
+.member h2{
+    margin: 2.5em 0;
+    font-size: 1.2em;
+}
+
+.member p{
+    font-size: 0.8em;
+}
+
+
+.member-menu{
+    flex-direction: column;
+    align-items: center;
+    padding: 1px 0;
+}
+
+.member-menu-contents{
+    width: 90%;
+    margin-top: 8em;
+    padding-bottom: 1em;
+}
+
+.member-menu-contents-image img{
+    width: 75%;
+    height: auto;
+}
+
+.member-menu-contents-text1{
+    margin-top: 2.5em;
+
+}
+
+.freedom-caption{
+    margin: 0;
+    padding: 1px 0 1em 0;
+    color: white;
+    background-color: rgb(235,185,77);
+}
+
+.freedom-mark{
+    margin-top: 0em;
+}
+
+.freedom-mark p{
+    font-size:0.8em;
+    /*Aboutを丸の中心に配置*/
+    height:60px;
+    width:60px;
+    line-height: 60px;
+}
+
+.freedom-caption h2{
+    font-size: 0.9em;
+    line-height: 2.5em;
+    padding: 20px 40px;
+    display: inline-block;
+    position:relative;
+}
+
+.freedom-caption h2::before, .freedom-caption h2::after{
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+
+.freedom-text p{
+    font-size: 0.8em;
+}
+
+.freedom-menu{
+    flex-direction: column;
+}
+
+.freedom-menu-contents{
+    width: 95%;
+}
+
+.freedom-menu-contents-text{
+    padding-left: 0.5em;
+}
+
+.freedom-menu-contents-text p{
+    margin-top: 0;
+    font-size: 0.9em;
+}
+
+.freedom-menu-contents-image img{
+    width: 100px;
+    height: auto;
+    border: 3px solid rgb(235,185,77);
+}
+
+.detail-menu{
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.detail-menu-contents{
+    width: 90%;
+    margin: 1em 5% 0 5%;
+
+}
+
+.detail h3{
+    font-size: 0.8em;
+}
+
+.detail-menu-contents span,
+.detail-menu-contents{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/*----------------220215追加-----------------*/
+.flow-container{
+    justify-content: flex-start; 
+}
+
+details[open] .flow-acord-sum p{
+    text-decoration:underline;
+}
+
+.flow-acord details{
+    margin: 0.5em 5%;
+    background-color: rgb(254,245,224);
+}
+
+.flow-acord-sum{
+    padding: 0 1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flow-acord-sum img{
+    width: 2em;
+    height: auto;
+}
+
+.flow-acord-sum p{
+    margin-left: 1em;
+}
+.flow-acord-text{
+    padding: 0 1em 2em 1em;
+}
+.flow-acord-text p{
+    font-size: 0.7em;
+}
+
+.flow-acord-text span{
+    font-size: 1.1em;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.flow-acord summary{
+    position: relative;
+}
+
+.flow-acord summary::after {
+	content: '\f0d8';
+    font-weight: 900;
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	transform: translateY(-50%);
+	transition: transform 0.1s;
+	font-size: 30px;
+    font-family: "Font Awesome 5 Free";
+}
+
+.flow-acord details[open] summary::after {
+	transform: translateY(-50%) rotate(180deg);
+}
+
+/*----------------220215追加-----------------*/
+
+
+
+.bangkok{
+    margin: 0 0 0 0;
+    padding: 1em 10% 1em 10%;
+    color: white;
+    background-image: url(./image/bangkokbgsp.jpg);
+    background-size: cover;
+    background-position: -80px 0; /*元画像の余白調整*/
+
+}
+
+.bangkok h2{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.bangkok h3{
+    font-size: 1em;
+    margin-bottom: 0em;
+    line-height: 1.5em;
+}
+
+.bangkok ul{
+    padding-left: 1em;
+}
+.bangkok li{
+    font-size: 0.8em;
+    font-weight: normal;
+    line-height: 2em;
+
+}
+
+.policy-caption h2{
+    font-size: 1em;
+    padding: 30px 20px;
+    display: inline-block;
+    position:relative;
+}
+
+.benefit-menu{
+    flex-direction: column;
+    margin: 0 5%;
+    margin-bottom: 1em;
+    padding: 2em 1em 0 1em;
+    display: flex;
+    border: 2px solid white;
+}
+
+.benefit-menu-index{
+    padding: 0 1em;
+    font-size: 1.2em;
+
+    transform: translateY(80%) translateX(0%);
+    z-index: 1000;
+}
+
+.benefit-menu-index{
+    width: 60%;
+    height: 3em;
+    padding: 0;    
+    font-size: 1.2em;
+    display: inline-block;
+    position: absolute;
+    background-color: rgb(235,185,77);
+    transform: translateY(-70%) translateX(-50%);
+}
+
+.benefit-menu-contents{
+    display: flex;
+    margin: 0em 5%;
+    padding: 1em 0;
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235,185,77);
+    border-radius: 0;
+    color: white;
+}
+
+.benefit-menu-contents-text1{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 15%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: rgb(235,185,77);
+    background-color: white;
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+}
+
+.benefit-menu-contents-text2{
+    width: 75%;
+    margin-top: 0em;
+    margin-left: 1em;
+    font-size: 0.9em;
+    text-align: start;
+}
+
+.message-contents{
+    flex-direction: column;
+}
+
+.policy{
+    padding: 1px 0 3em 0;
+    background-image: url(./image/specialdetailsp.jpg);
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+}
+
+.policy h3{
+    margin-top: 2em;
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+.policy p{
+    margin-top: 0;
+    font-size: 0.8em;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+.policy-caption h2{
+    font-size: 1.2em;
+    padding: 10px 40px;
+    line-height: 2em;
+}
+
+.message-index{
+    padding-top: 2em;
+    padding-bottom: 0;
+}
+
+.message-index h2{
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.message-index h3{
+    font-size: 1em;
+    letter-spacing: 0.2em;
+
+}
+
+.message-contents{
+    display: flex;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+}
+
+.message-contents-image{
+    width: 90%;
+    padding: 0 5%;
+    text-align: center;
+}
+
+.message-contents-text{
+    width: 90%;
+    padding: 0 5%;
+    margin-left: 0;
+}
+
+.message-contents-text ul{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 1em;
+}
+
+.form{
+    width: 100%;
+    text-align: center;
+}
+
+.form h2{
+    margin-top: 0;
+    font-size: 1em;
+}
+
+.form h3{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 0.9em;
+}
+
+.form-name1,
+.form-name2,
+.form-email{
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+    margin-right: 0;
+    width: 90%;
+    height: 4em;
+    font-size: 0.9em;
+    border-radius: 5px;
+}
+
+.form textarea{
+    margin: 2em 0;
+    padding-top: 1em;
+    padding-left: 0.5em;
+    margin-right: 0;
+    width: 90%;
+    height: 6em;
+    font-size: 1em;
+}
+
+.form-submit{
+    margin-bottom: 0em;
+    padding-left: 0em;
+    width: 91%;
+    height: 3em;
+    font-size: 1.4em;
+    letter-spacing: 1em;
+}
+
+.faq{
+    padding-bottom: 1em;
+}
+
+.faq h2{
+    margin: 2em 0;
+    font-size: 1.4em;
+    opacity: 0.8;
+}
+
+.accordion-area{
+    width: 96%;
+    padding: 0 2%;
+}
+
+.title{
+    margin: 2em 0;
+    font-size: 1em;
+    padding-right: 2em;
+}
+
+.title::before,
+.title::after{
+    content: '\f151';
+    font-weight: 900;
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    transition: transform 0.1s;
+    font-size: 20px;
+    font-family: "Font Awesome 5 Free";
+    
+}
+
+.box {
+    padding: 0 1em 1em 1em;
+    font-size: 0.8em;
+}
+
+.footer{
+    padding: 0.8em 0;
+}
+
+
+}/*end*/
